@@ -7,6 +7,7 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
+  { path: 'protected', loadChildren: () => import('./protected/protected.module').then(m => m.ProtectedModule) },
 ];
 
 @NgModule({
